@@ -11,7 +11,7 @@ function Signup() {
   const navigate =useNavigate()
   const login =async (e)=>{
     e.preventDefault();
-    const logdetail =await axios.post("http://localhost:4000/api/login/sign",{mail,password})
+    const logdetail =await axios.post("https://docs-mart-to-do.vercel.app/api/login/sign",{mail,password})
     console.log(logdetail.data);
     localStorage.setItem('user info', JSON.stringify(logdetail.data))
 
