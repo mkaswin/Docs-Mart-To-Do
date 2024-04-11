@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use(
     cors({
-   origin:"http://localhost:3000",
+   origin:"https://docs-mart-to-do-front-end.vercel.app",
  credentials:true,  
 }))
 
