@@ -14,7 +14,7 @@ function Register() {
   
   const reg = async (e)=>{
     e.preventDefault();
-    const RegDetails =await axios.post("http://localhost:4000/api/login/reg",{name,password,mail,confirmpassword})
+    const RegDetails =await axios.post("https://docs-mart-to-do.vercel.app/api/login/reg",{name,password,mail,confirmpassword})
     console.log(RegDetails.data);
     localStorage.setItem('userinfo',JSON.stringify(RegDetails.data))
     if(RegDetails.data){
