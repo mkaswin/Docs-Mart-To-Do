@@ -1,0 +1,11 @@
+.container{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.validation_card{
+  margin-top: 15rem;
+  width: 40rem;
+  padding: 10px;
+}
