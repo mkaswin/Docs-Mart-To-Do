@@ -13,6 +13,9 @@ app.use(
  credentials:true,  
 }))
 
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 env.config()
 
 mongoose.connect(process.env.MONGO).then(()=>{
